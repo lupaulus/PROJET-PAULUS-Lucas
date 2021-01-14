@@ -1,0 +1,17 @@
+<div *ngIf="civility">
+    <h2 >Récapitulatif</h2> 
+    <ul >
+        <li >Civilite : {{civility}}</li>
+        <li>Nom : {{lastname}}</li>
+        <li>Prénom : {{firstname}}</li>
+        <li>Adresse : {{address}}</li>
+        <li>Code Postal : {{zipcode}}</li>
+        <li>Ville : {{city}}</li>
+        <li>Pays : {{country}}</li>
+        <li *ngIf="tel">Tel : {{tel | phoneNumber}}</li>
+        <li>Mail : {{mail}}</li>
+        <li>Login : {{login}}</li>
+        <li>Password : {{password}}</li>
+    </ul>
+</div>
+

@@ -1,0 +1,26 @@
+
+<div class="container-fluid">
+<div class="row justify-content-around">
+<div *ngFor="let item of produits">
+  
+    <div  class="card col" style="width: 18rem;">
+    <img class="card-img-top" src="{{item.image}}" alt="aie">
+    <div class="card-body">
+      <h5 class="card-title"><b>{{item.name}}</b></h5>
+      <div class="card-text">
+          <p><b>{{item.price}} €</b></p>
+          <div>
+            <button type="button" (click)="onClick(item.id)" class="btn btn-primary">Ajouter Panier</button>
+            <a [routerLink]="['detail',item.id]" ><button type="button" class="btn btn-secondary">Détails</button></a>
+          </div>
+      
+      </div>
+      
+    </div>
+</div>
+<br>
+
+</div>
+
+</div>
+</div>

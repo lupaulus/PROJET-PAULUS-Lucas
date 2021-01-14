@@ -1,0 +1,14 @@
+<div class="container">
+    <br>
+    <div class="md-form active-cyan-2 mb-3">
+        <div class="container">
+            <label for="search">Recherche par nom</label>
+            <input id="search" class="form-control" type="text" [(ngModel)]="recherche" (input)="search()" placeholder="Search" aria-label="Search">
+        </div>
+        
+        <div class="container">
+            <label for="slider">Prix</label>
+            <ng5-slider id="slider" [(value)]="value" [(highValue)]="highValue" [options]="options" (userChangeEnd)="search()"></ng5-slider>
+        </div>
+    </div>    
+</div>
